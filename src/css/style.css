@@ -1,6 +1,6 @@
 /* color: #FAD02C; */
 html{
-    font-size:62.5%;
+    font-size: 62.5%;
 } 
 
 body {
@@ -9,7 +9,7 @@ body {
     background-color: black; 
 }
 
-/* FOOTER */
+/* MENU */
 
 .bg-nav .menu .logo {
     width: 180px;
@@ -61,12 +61,6 @@ body {
     height: calc(100vh - 126px);
     max-width: 100%;
 }
-
-/* .container {
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-} */
 
 .video {
     width: 60%;
@@ -130,32 +124,36 @@ body {
     color: #ffffff;
 }
 
-/* ABOUT ME  */
-
-
-/* .container-vessiculo {
+.verse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid;
     border-color: #FAD02C #0A0A0A #FAD02C #0A0A0A;
     background-color: #0a0a0a00;
-    padding: 15px;
+    padding: 20px 0;
     width: 100%;
-    font-family: 'Bebas Neue', cursive;
+}
+
+.verse{
+    width: 100%;
+}
+
+.verse h3 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-} */
-
-/* .container-vessiculo {
-    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 3px;
 }
 
-.container-vessiculo h3 {
-    color: white;
-    font-size: 35px;
-    letter-spacing: 1px;
-}
-
-.letreiro {
+/* .letreiro {
     width: 100%;
 }
 
@@ -181,6 +179,8 @@ body {
         transform: translateX(-50%);
     }
 } */
+
+/* ABOUT ME  */
 
 .about-me {
     display: flex;
@@ -343,6 +343,8 @@ body {
     color: #FFFFFF;
 }
 
+/* EVENT */
+
 
 .about-event{
     display:flex;
@@ -350,35 +352,25 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-    min-height: 100vh;
+    min-height: 110vh;
     background: url(../imagens/bg.png) center center no-repeat;
     background-size: cover;
     font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 74px;
-    color: #000000;
+    font-size: 5rem;
 }
 
-.about-event .local{
-    display: flex;
-    aling-itens: center;
-    justify-content: center;
-    gap: 37px;
+.about-event .container {
+    display:flex;
+    flex-direction: column;
+    gap: 7.4rem;
+    max-width: 400px; 
 }
 
-.about-event .date{
+.about-event .container .info-event{
     display: flex;
-    aling-itens: center;
-    justify-content: center;
-    gap: 37px;
-}
-
-.about-event .horario{
-    display: flex;
-    aling-itens: center;
-    justify-content: center;
+    aling-itens: start;
+    justify-content: start;
+    text-align: start;
     gap: 37px;
 }
 
@@ -408,6 +400,139 @@ body {
     height: 114px;
     display: block;
 }
+
+/* SING-UP */
+
+.sign-up{
+   display: flex;
+   justify-content: center;
+   aling-items: center;
+   padding-top: 50px;
+}
+
+.sign-up .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aling-content: center;
+    max-width: 1024px;
+    padding: 0 20px;
+    background-color: #EAEAEA;
+    padding: 70px 110px;
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    top: -150px;
+}
+
+.sign-up .container:before{
+    content: "";
+    background: url(../imagens/biblia.png) center center no-repeat;
+    width: 640px;
+    height: 240px;
+    position: absolute;
+    top: -200px;
+}
+
+.sign-up .container h1{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 74px;
+    margin-bottom: 70px;
+    color: #000000;
+}
+
+.sign-up .container .btn{
+    width: 576px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(151.74deg, #EFBF01 0.67%, #89700E 162.3%);
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #000000;
+}
+
+/* FOOTER   */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    aling-items: center;
+  
+    padding-bottom: 70px;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.footer .logo-footer{
+    max-width: 263px;
+}
+
+.footer .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    font-family: 'Poppins';
+    font-size: 1.7rem;
+    color: #FFFFFF;
+}
+
+.footer .social .instagram,.phone,.email{
+    display: flex;
+    aling-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.footer .social .instagram:before{
+    content: "";
+    background: url(../imagens/instagram.png) center center no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.footer .social .phone:before{
+    content: "";
+    background: url(../imagens/phone.png) center center no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.footer .social .email:before{
+    content: "";
+    background: url(../imagens/email.png) center center no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.footer .copy {
+    display: flex;
+    align-items: end;
+}
+
+
+
+
+
+
+
+
+
 
 
 
