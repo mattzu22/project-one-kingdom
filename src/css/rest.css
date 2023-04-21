@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+/* font-family: 'IM Fell DW Pica SC', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&display=swap');
+/* font-family: 'Catamaran', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;   
+}
