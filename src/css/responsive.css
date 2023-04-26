@@ -15,17 +15,66 @@
     width: 50%;
   }
 
-  .info .btn {
+  .home-page .info .btn {
     padding: 22px 68px;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     border-radius: 15px;
     transition: 0.3s ease-in-out;
   }
+
+  .about-me .container .btn {
+    font-size: 2rem;
+  }
+
+  .about-me .container {
+    gap: 5rem;
+  }
+
+  .about-me .info p {
+    margin-bottom: 25px;
+  }
+}
+
+
+@media (max-width: 960px){
+  .about-me .container {
+    flex-wrap: wrap;
+  }
+
+  .about-me .info {
+    order: 1;
+    margin: 0 auto;
+  }
+
+  .about-me {
+    background: url(../imagens/fundo-sobre-nos.png) center center no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+  }
+
+  .about-me .container .img-adm {
+    margin: 0 auto;
+  }
+
+  .about-me .btn {
+    padding: 22px 0 22px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .participants-page .participants{
+    gap: 4rem; 
+}
 }
 
 @media (max-width: 768px) {
+  .bg-nav .menu .logo {
+    width: 140px;
+  }
+
   .bg-nav .menu .navegation {
     display: none;
   }
@@ -50,15 +99,15 @@
     letter-spacing: 1.5px;
   }
 
-  .info .btn {
+  .home-page .info .btn {
     color: #ffffff;
     border: 3px solid #ffffff;
     background-color: transparent;
     padding: 22px 68px;
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
 
-  .about-me .container {
+  /* .about-me .container {
     flex-wrap: wrap;
   }
 
@@ -82,7 +131,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2rem;
-  }
+  } */
 
   .verse h3 {
     font-family: "Bebas Neue";
@@ -110,8 +159,7 @@
 
   .center:before,
   .center:after,
-  .center div
-   {
+  .center div {
     background: #fff;
     content: "";
     display: block;

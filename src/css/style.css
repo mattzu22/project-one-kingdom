@@ -104,7 +104,7 @@ body {
     filter: drop-shadow(0 0 0.75rem rgb(119, 100, 104));
 }
 
-.info .btn {
+.home-page .info .btn {
     color: #FAD02C;
     border: 1px solid #FAD02C;
     text-transform: uppercase;
@@ -119,7 +119,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.infor .btn:hover {
+.home-page .info .btn:hover {
     border: 1px solid #ffffff;
     color: #ffffff;
 }
@@ -143,7 +143,7 @@ body {
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 2.4rem;
     line-height: 31px;
     display: flex;
     align-items: center;
@@ -206,6 +206,7 @@ body {
     font-size: 6rem;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: left;
 }
 
 .about-me .info{
@@ -232,7 +233,7 @@ body {
     width: 90px;
 }
 
-.about-me .btn{
+.about-me .container .btn{
     display: block;
     width: 100%;
     text-align: center;
@@ -304,7 +305,10 @@ body {
     display: flex;
     justify-content: center;
     align-itens: center;
-    gap: 120px; 
+    max-width: 100%;
+    padding: 0 20px;
+    /* flex-wrap: wrap; */
+    gap: 12rem; 
 }
 
 .participants-page .participant{
@@ -312,8 +316,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 280px;
-    min-width: 240px;
+    width: 240px;
     padding: 29px 0 86px 0;
     background-color: rgba(62, 60, 60, 0.9);
     opacity: 0.4;
