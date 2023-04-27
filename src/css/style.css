@@ -285,12 +285,11 @@ body {
 }
 
 .participants-page h1{
-    margin: 114px 0 132px 0;
+    padding-bottom: 100px;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
     font-size: 55px;
-    line-height: 82px;
     color: #FFFFFF;
 }
 
@@ -411,6 +410,7 @@ body {
    justify-content: center;
    aling-items: center;
    padding-top: 50px;
+   padding: 0 25px;
 }
 
 .sign-up .container{
@@ -419,9 +419,8 @@ body {
     justify-content: center;
     aling-content: center;
     max-width: 1024px;
-    padding: 0 20px;
     background-color: #EAEAEA;
-    padding: 70px 110px;
+    padding: 50px 110px;
     backdrop-filter: blur(3px);
     border-radius: 30px;
     text-align: center;
@@ -444,22 +443,21 @@ body {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
-    font-size: 5rem;
-    line-height: 74px;
+    font-size: 4rem;
     margin-bottom: 70px;
     color: #000000;
 }
 
 .sign-up .container .btn{
-    width: 576px;
+    width: 500px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     background: linear-gradient(151.74deg, #EFBF01 0.67%, #89700E 162.3%);
-    border-radius: 30px;
+    border-radius: 10px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #000000;
 }
 
@@ -468,8 +466,8 @@ body {
 .footer{
     display: flex;
     justify-content: space-between;
-    aling-items: center;
-    padding-bottom: 70px;
+    align-items: center;
+    padding: 0 20px 70px 20px;
     color: white;
     max-width: 1200px;
     margin: 0 auto;

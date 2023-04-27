@@ -37,8 +37,7 @@
   }
 }
 
-
-@media (max-width: 960px){
+@media (max-width: 960px) {
   .about-me .container {
     flex-wrap: wrap;
   }
@@ -65,9 +64,69 @@
     font-size: 2rem;
   }
 
-  .participants-page .participants{
-    gap: 4rem; 
-}
+  .participants-page .participants {
+    gap: 4rem;
+  }
+
+  .about-event .local:before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-event .date:before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-event .horario:before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-event {
+    font-size: 4rem;
+  }
+
+  .sign-up .container h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .sign-up .container .btn {
+    width: 300px;
+    padding: 10px;
+    font-size: 2.5rem;
+  }
+
+  .footer .logo-footer {
+    max-width: 180px;
+  }
+
+  .footer .social .instagram:before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer .social .phone:before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer .social .email:before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer .social {
+    gap: 15px;
+    font-size: 1.4rem;
+  }
+
+  .sign-up .container:before {
+    background-size: contain;
+    max-width: 450px;
+    top: -180px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -177,4 +236,48 @@
   .center.selecionado div {
     transform: scale(0);
   }
+}
+
+@media (max-width: 650px) {
+  .about-me .container .btn {
+    font-size: 1.8rem;
+  }
+  .info img {
+    margin-top: 40px;
+  }
+
+  .home-page .info .btn {
+    margin-top: 60px;
+  }
+
+  .participants-page .participants {
+    flex-direction: column;
+  }
+
+  .sign-up .container:before {
+    background-size: contain;
+    max-width: 330px;
+    top: -160px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .sign-up .container {
+    padding: 40px 60px;
+  }
+
+  .sign-up .container h1 {
+    font-size: 2rem;
+  }
+
+  .sign-up .container .btn {
+    font-size: 1.8rem;
+    width: 200px;
+  }
+
+  .sign-up {
+    padding: 0 10px;
+}
 }
