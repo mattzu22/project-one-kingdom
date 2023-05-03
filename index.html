@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <div class="bg-nav">
+    <header class="bg-nav">
       <div class="menu">
         <img class="logo" src="src/imagens/logo.svg" alt="logo" />
 
@@ -29,20 +29,20 @@
           </ul>
         </nav>
 
-        <!-- <nav class="nav-mobile">
+        <nav class="nav-mobile">
           <div class="center">
             <div></div>
           </div>
 
           <ul class="navegation-mobile">
-            <a href="#home" class="ativo"><li>início</li></a>
+            <a href="#home"><li>início</li></a>
             <a href="#about-me"><li>Sobre nós</li></a>
             <a href="#participants"><li>Participantes</li></a>
-            <a href="#contacts"><li>Contatos</li></a>
+            <a href="#contacts"><li>Próximo evento</li></a>
           </ul>
-        </nav> -->
+        </nav>
       </div>
-    </div>
+    </header>
 
     <section class="home-page">
       <div class="video">
@@ -110,10 +110,10 @@
         <span class="letreiro-texto">One Kingdom</span>
       </div>
     </div> -->
-    <section class="participants-page">
+    <!-- <section class="participants-page">
    
        
-    </section>
+    </section> -->
 
     <section section class="about-event">
       <div class="container">
@@ -159,12 +159,12 @@
       </div>
 
       <nav class="nav-footer">
-          <ul>
-            <a href=""><li>Inicio</li></a>
-            <a href=""><li>Participantes</li></a>
-            <a href=""><li>Sobre nós</li></a>
-            <a href=""><li>Contato</li></a>
-          </ul>
+        <ul>
+          <a href=""><li>Inicio</li></a>
+          <a href=""><li>Participantes</li></a>
+          <a href=""><li>Sobre nós</li></a>
+          <a href=""><li>Contato</li></a>
+        </ul>
       </nav>
 
       <div class="copy">
@@ -172,5 +172,21 @@
       </div>
     </footer>
     <script src="src/js/letreiro.js"></script>
+    <script>
+      const center = document.querySelector(".center");
+      
+      center.addEventListener("click", () => {
+        center.classList.toggle("selecionado");
+
+        const selecionado = document.querySelector('.center.selecionado')
+        const nav = document.querySelector('.navegation-mobile')
+        if(selecionado){
+          nav.classList.toggle('selecionado')
+        }else{
+          nav.classList.remove('selecionado')
+        }
+
+      });
+    </script>
   </body>
 </html>

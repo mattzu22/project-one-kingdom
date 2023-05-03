@@ -1,3 +1,27 @@
+@media (max-width: 1550px) {
+  .verse h3 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .verse h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1070px) {
+  .verse h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .verse h3 {
+    font-size: 1.4rem;
+  }
+}
+
 @media (max-width: 1180px) {
   .bg-nav .menu .navegation {
     gap: 40px;
@@ -64,10 +88,6 @@
     font-size: 2rem;
   }
 
-  .participants-page .participants {
-    gap: 4rem;
-  }
-
   .sign-up .container h1 {
     font-size: 3rem;
     margin-bottom: 30px;
@@ -110,12 +130,6 @@
     color: #ffffff;
   }
 
-  .sign-up .container:before {
-    background-size: contain;
-    max-width: 450px;
-    top: -180px;
-  }
-
   .about-event .info-event .location .unit-1 {
     font-size: 4.5rem;
   }
@@ -135,10 +149,6 @@
   .about-event .info-event .info .date {
     font-size: 4.5rem;
   }
-
-  .about-event .info-event .location {
-    width: 520px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -146,8 +156,63 @@
     width: 140px;
   }
 
-  .bg-nav .menu .navegation {
+  .bg-nav .menu .nav .navegation {
     display: none;
+  }
+
+  .bg-nav .menu .nav-mobile .navegation-mobile a {
+    font-family: "Oswald";
+    font-size: 5rem;
+    color: #ffd242;
+    margin-bottom: 20px
+  }
+
+  .bg-nav .menu .nav-mobile .navegation-mobile.selecionado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: calc(100vh - 130px);
+    background: black;
+    margin-top: 39px;
+  }
+
+  .center {
+    /* margin-right: 40px; */
+    width: 25px;
+    /* z-index: 1; */
+    /* position: absolute; */
+  }
+
+  /* .center.selecionado {
+    position: fixed;
+  } */
+
+  .center:before,
+  .center:after,
+  .center div {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+
+  .center.selecionado:before {
+    transform: translateY(8.5px) rotate(135deg);
+  }
+
+  .center.selecionado:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+
+  .center.selecionado div {
+    transform: scale(0);
   }
 
   .video {
@@ -179,75 +244,45 @@
     font-size: 2rem;
   }
 
-  /* .about-me .container {
-    flex-wrap: wrap;
+  .about-event {
+    min-height: 130vh;
   }
 
-  .about-me .info {
-    order: 1;
-    margin: 0 auto;
-  }
-
-  .about-me {
-    background: url(../imagens/fundo-sobre-nos.png) center center no-repeat;
-    background-size: cover;
+  .about-event .container .title {
     margin-bottom: 100px;
   }
 
-  .about-me .container .img-adm {
-    margin: 0 auto;
+  .about-event .info-event {
+    flex-direction: column;
+    align-items: start;
   }
 
-  .about-me .btn {
-    padding: 22px 0 22px 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-  } */
+  .about-event .info-event .info .date {
+    margin-bottom: 0;
+  }
 
-  .verse h3 {
-    font-family: "Bebas Neue";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 31px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  .about-event .info-event .location {
+    margin-bottom: 50px;
+  }
+
+  .about-event .container .title {
+    width: 100%;
+    font-size: 6rem;
+    text-align: start;
+    margin-bottom: 170px;
     text-transform: uppercase;
-    color: #ffffff;
-    letter-spacing: 1px;
   }
 
-  /* menu-hamburguer */
-
-  .center {
-    margin-right: 40px;
-    width: 25px;
-    z-index: 1;
-    position: absolute;
-    right: 0;
+  .sign-up .container {
+    padding: 50px 100px;
   }
 
-  .center:before,
-  .center:after,
-  .center div {
-    background: #fff;
-    content: "";
-    display: block;
-    height: 3px;
-    border-radius: 3px;
-    margin: 7px 0;
-    transition: 0.5s;
+  .sign-up .container h1 {
+    font-size: 2.5rem;
   }
-  .center.selecionado:before {
-    transform: translateY(8.5px) rotate(135deg);
-  }
-  .center.selecionado:after {
-    transform: translateY(-12px) rotate(-135deg);
-  }
-  .center.selecionado div {
-    transform: scale(0);
+
+  .footer {
+    flex-wrap: wrap;
   }
 }
 
@@ -255,6 +290,7 @@
   .about-me .container .btn {
     font-size: 1.8rem;
   }
+
   .info img {
     margin-top: 40px;
   }
@@ -263,20 +299,38 @@
     margin-top: 60px;
   }
 
-  .participants-page .participants {
-    flex-direction: column;
+  .about-event {
+    min-height: 130vh;
   }
 
-  .sign-up .container:before {
-    background-size: contain;
-    max-width: 330px;
-    top: -160px;
+  .about-event .info-event .location .unit-1 {
+    font-size: 4rem;
   }
 
-  .footer {
+  .about-event .info-event .location .pais {
+    font-size: 4rem;
+  }
+
+  .about-event .info-event .location p:first-child {
+    font-size: 4rem;
+  }
+
+  .about-event .info-event .location:nth-child(1) {
+    font-size: 4rem;
+  }
+
+  .about-event .info-event .info .date {
+    font-size: 4rem;
+  }
+
+  .about-event .info-event .info .hour {
+    font-size: 4rem;
+  }
+
+  /* .footer {
     flex-direction: column;
     align-items: start;
-  }
+  } */
 
   .sign-up .container {
     padding: 40px 60px;
@@ -299,5 +353,49 @@
     position: absolute;
     right: 20px;
     bottom: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer .social {
+    margin-bottom: 57px;
+    gap: 20px;
+  }
+
+  .footer .nav-footer ul li {
+    margin-bottom: 20px;
+  }
+
+  .footer .logo-footer {
+    max-width: 194px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .sign-up .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .sign-up .container .btn {
+    font-size: 1.4rem;
+    width: 180px;
+  }
+
+  .about-event {
+    min-height: 140vh;
+  }
+
+  .about-event .container .title {
+    font-size: 4.5rem;
+  }
+
+  .about-me .container .btn {
+    font-size: 1.6rem;
   }
 }

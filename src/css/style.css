@@ -34,6 +34,7 @@ body {
   color: aliceblue;
   background-color: #0a0a0a;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 .bg-nav .menu .navegation {
@@ -51,6 +52,10 @@ body {
   display: block;
   margin: 0 auto;
   width: 20px;
+}
+
+.bg-nav .menu .nav-mobile .navegation-mobile{
+  display: none;
 }
 
 /* HOME PAGE */
@@ -102,6 +107,7 @@ body {
   margin-top: 80px;
   width: 25%;
   filter: drop-shadow(0 0 0.75rem rgb(119, 100, 104));
+  z-index: -1;
 }
 
 .home-page .info .btn {
@@ -132,10 +138,6 @@ body {
   border-color: #fad02c #0a0a0a #fad02c #0a0a0a;
   background-color: #ffffff;
   padding: 20px 0;
-  width: 100%;
-}
-
-.verse {
   width: 100%;
 }
 
@@ -349,7 +351,7 @@ body {
 
 .about-event {
   display: flex;
-  align-items: center;
+  padding-top: 110px;
   justify-content: center;
   min-height: 125vh;
   background: url(../imagens/bg-event.png) center center no-repeat;
@@ -359,11 +361,18 @@ body {
   color: #ffffff;
 }
 
+.about-event .container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 20px;
+}
+
 .about-event .container .title {
   width: 100%;
   font-size: 8rem;
   text-align: start;
   margin-bottom: 170px;
+  text-transform: uppercase;
 }
 
 .about-event .container .title:after {
@@ -377,11 +386,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-}
-
-.about-event .info-event .location {
-  width: 600px;
 }
 
 .about-event .info-event .location .unit-1 {
@@ -422,7 +426,7 @@ body {
   flex-direction: column;
   justify-content: center;
   aling-content: center;
-  /* max-width: 1024px; */
+  border-radius: 10px;
   background: rgba(177, 177, 177, 0.2);
   backdrop-filter: blur(2.68359px);
   padding: 50px 110px;
@@ -430,7 +434,6 @@ body {
   text-align: center;
   position: relative;
   top: -130px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 .sign-up .container h1 {
