@@ -12,6 +12,10 @@
       href="src/imagens/logo-simbolo.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>One Kingdom</title>
   </head>
 
@@ -110,10 +114,62 @@
         <span class="letreiro-texto">One Kingdom</span>
       </div>
     </div> -->
-    <!-- <section class="participants-page">
-   
-       
-    </section> -->
+
+    <section class="participants-page">
+      <h1 class="title">Participantes</h1>
+
+      <div class="swiper-button-prev"></div>
+      <div class="participants swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="participant swiper-slide">
+            <img src="./src/imagens/part.png" alt="participant" />
+
+            <div class="info">
+              <h1 class="name">carlos santos</h1>
+              <p class="office">Cantor</p>
+            </div>
+          </div>
+
+          <div class="participant swiper-slide">
+            <img src="./src/imagens/part2.png" alt="participant" />
+
+            <div class="info">
+              <h1 class="name">joana silva</h1>
+              <p class="office">Coordenadora</p>
+            </div>
+          </div>
+
+          <div class="participant swiper-slide">
+            <img src="./src/imagens/part.png" alt="participant" />
+
+            <div class="info">
+              <h1 class="name">Roberto</h1>
+              <p class="office">Palestrante</p>
+            </div>
+          </div>
+          <div class="participant swiper-slide">
+            <img src="./src/imagens/part.png" alt="participant" />
+
+            <div class="info">
+              <h1 class="name">Roberto</h1>
+              <p class="office">cantor</p>
+            </div>
+          </div>
+
+          <div class="participant swiper-slide">
+            <img src="./src/imagens/part.png" alt="participant" />
+
+            <div class="info">
+              <h1 class="name">Roberto</h1>
+              <p class="office">cantor</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <div class="swiper-button-next"></div>
+    </section>
 
     <section section class="about-event">
       <div class="container">
@@ -174,18 +230,37 @@
     <script src="src/js/letreiro.js"></script>
     <script>
       const center = document.querySelector(".center");
-      
+
       center.addEventListener("click", () => {
         center.classList.toggle("selecionado");
 
-        const selecionado = document.querySelector('.center.selecionado')
-        const nav = document.querySelector('.navegation-mobile')
-        if(selecionado){
-          nav.classList.toggle('selecionado')
-        }else{
-          nav.classList.remove('selecionado')
+        const selecionado = document.querySelector(".center.selecionado");
+        const nav = document.querySelector(".navegation-mobile");
+        if (selecionado) {
+          nav.classList.toggle("selecionado");
+        } else {
+          nav.classList.remove("selecionado");
         }
+      });
+    </script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
       });
     </script>
   </body>

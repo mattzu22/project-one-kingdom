@@ -194,7 +194,7 @@
   .center:before,
   .center:after,
   .center div {
-    background: #fff;
+    background: #ffd242;
     content: "";
     display: block;
     height: 3px;
