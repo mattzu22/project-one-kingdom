@@ -4,8 +4,18 @@
   }
 }
 
+@media (max-width: 1350px) {
+.about-me .container .btn {
+  font-size: 2.2rem;
+}
+}
+
 @media (max-width: 1200px) {
   .verse h3 {
+    font-size: 2rem;
+  }
+
+  .about-me .container .btn {
     font-size: 2rem;
   }
 }
@@ -13,6 +23,9 @@
 @media (max-width: 1070px) {
   .verse h3 {
     font-size: 1.7rem;
+  }
+  .about-me .container .btn {
+    font-size: 1.8rem;
   }
 }
 
@@ -48,16 +61,17 @@
     transition: 0.3s ease-in-out;
   }
 
-  .about-me .container .btn {
+  /* .about-me .container .btn {
     font-size: 2rem;
-  }
+  } */
 
   .about-me .container {
     gap: 5rem;
   }
 
   .about-me .info p {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    font-size: 2.1rem
   }
 }
 
@@ -67,9 +81,12 @@
   }
 
   .about-me .info {
+    text-align: center;
+    max-width: 620px;
     order: 1;
     margin: 0 auto;
   }
+
 
   .about-me {
     background: url(../imagens/fundo-sobre-nos.png) center center no-repeat;
@@ -79,13 +96,14 @@
 
   .about-me .container .img-adm {
     margin: 0 auto;
+    padding: 0 40px;
   }
 
-  .about-me .btn {
-    padding: 22px 0 22px 0;
+  .about-me .container .btn {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    margin: 0 auto;
   }
 
   .sign-up .container h1 {
@@ -167,6 +185,10 @@
     margin-bottom: 20px
   }
 
+  .bg-nav .menu .nav-mobile{
+    display: block;
+  }
+
   .bg-nav .menu .nav-mobile .navegation-mobile.selecionado {
     display: flex;
     flex-direction: column;
@@ -178,18 +200,13 @@
     min-height: calc(100vh - 130px);
     background: black;
     margin-top: 39px;
+    transition: 1s ease;
   }
 
   .center {
-    /* margin-right: 40px; */
     width: 25px;
-    /* z-index: 1; */
-    /* position: absolute; */
+    display: block;
   }
-
-  /* .center.selecionado {
-    position: fixed;
-  } */
 
   .center:before,
   .center:after,
@@ -283,12 +300,18 @@
 
   .footer {
     flex-wrap: wrap;
+    gap: 20px
   }
 }
 
 @media (max-width: 650px) {
   .about-me .container .btn {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .about-me h1 {
+    font-size: 5rem;
   }
 
   .info img {
@@ -357,6 +380,14 @@
 }
 
 @media (max-width: 550px) {
+  .about-me .container .btn {
+    font-size: 1.8rem;
+  }
+
+  .about-me h1 {
+    font-size: 4.2rem;
+  }
+
   .footer {
     flex-direction: column;
     align-items: start;

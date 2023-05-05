@@ -233,9 +233,12 @@
 
       center.addEventListener("click", () => {
         center.classList.toggle("selecionado");
+        console.log(center);
 
         const selecionado = document.querySelector(".center.selecionado");
+        console.log(selecionado);
         const nav = document.querySelector(".navegation-mobile");
+        console.log(nav);
         if (selecionado) {
           nav.classList.toggle("selecionado");
         } else {
@@ -251,7 +254,7 @@
     <script>
       const swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 50,
         freeMode: true,
         navigation: {
           nextEl: ".swiper-button-next",
