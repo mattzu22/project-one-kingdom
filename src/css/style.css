@@ -19,9 +19,9 @@ body {
   background-color: #0a0a0a;
   color: aliceblue;
   border-bottom: solid 1px #fad02c;
-  position: fixed; 
-  width: 100%;
-  z-index: 100;
+  /* position: fixed;  */
+  /* width: 100%;
+  z-index: 100; */
 }
 
 .bg-nav .menu {
@@ -74,7 +74,7 @@ body {
 .home-page {
   display: flex;
   align-itens: center;
-  height: calc(100vh - 126px);
+  height: calc(100vh - 80px);
   max-width: 100%;
 }
 
@@ -86,7 +86,7 @@ body {
   object-fit: cover;
   opacity: 80%;
   width: 100%;
-  height: calc(100vh - 127px);
+  height: calc(100vh - 80px);
 }
 
 .home-page .info {
@@ -137,17 +137,15 @@ body {
   color: #fad02c;
 }
 
-//VERSE
+/* VERSE  */
 
-.verse {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.verse{
+  text-align: center;
   border: 2px solid;
   border-color: #fad02c #0a0a0a #fad02c #0a0a0a;
-  background-color: #ffffff;
-  padding: 20px 0;
+  padding: 15px 0;
   width: 100%;
+  background-color: #ffffff;
 }
 
 .verse h3 {
@@ -155,16 +153,14 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 3rem;
-  line-height: 31px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
 
-/* .letreiro {
+.letreiro {
     width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
 }
 
 .letreiro-wrapper {
@@ -176,7 +172,7 @@ body {
     padding: 5px ;
     font-family: 'Bebas Neue', cursive;
     white-space: nowrap;
-    font-size: 60px;
+    font-size: 7rem;
     margin-right: 100px;
 }
 
@@ -188,7 +184,7 @@ body {
     100% {
         transform: translateX(-50%);
     }
-} */
+}
 
 /* ABOUT ME  */
 
@@ -211,8 +207,6 @@ body {
   font-weight: 500;
   font-size: 6rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: left;
 }
 
 .about-me .container {
@@ -225,10 +219,8 @@ body {
 
 .about-me .container .img-adm {
   max-width: 600px;
-  min-width: 400px;
   width: 100%;
 }
-
 
 .about-me h1:after {
   content: "";
@@ -245,7 +237,7 @@ body {
 
 .about-me .info p {
   margin-bottom: 40px;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -259,7 +251,7 @@ body {
   width: 90%;
   text-align: center;
   margin-top: 35px;
-  background: linear-gradient(90.76deg, #FAD02C 1.88%, #AC8E19 98.12%);
+  background: #fad02c;
   padding: 15px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -279,12 +271,17 @@ body {
 /* PARTICIPANTES */
 
 .participants-page {
+  background: url(../imagens/dark-plaster-pattern.png) center center no-repeat;
+  background-size: cover;
+}
+
+.participants-page .container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  max-width: 1250px;
+  min-height: 80vh;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
   position: relative;
@@ -292,7 +289,7 @@ body {
 
 .participants-page .title {
   position: absolute;
-  top: 90px;
+  top: 60px;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
@@ -309,7 +306,7 @@ body {
 }
 
 .participants {
-  max-width: 1100px;
+  max-width: 1500px;
   width: 100%;
 }
 
@@ -356,7 +353,7 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  height: 442px;
+  height: 360px;
   object-fit: cover;
 }
 

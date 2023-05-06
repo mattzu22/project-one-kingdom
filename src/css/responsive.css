@@ -82,11 +82,10 @@
 
   .about-me .info {
     text-align: center;
-    max-width: 620px;
+    max-width: 600px;
     order: 1;
     margin: 0 auto;
   }
-
 
   .about-me {
     background: url(../imagens/fundo-sobre-nos.png) center center no-repeat;
@@ -96,14 +95,14 @@
 
   .about-me .container .img-adm {
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 30px;
   }
 
   .about-me .container .btn {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2.3rem;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .sign-up .container h1 {
@@ -197,7 +196,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 84px);
     background: black;
     margin-top: 39px;
     transition: 1s ease;
@@ -314,6 +313,10 @@
     font-size: 5rem;
   }
 
+  .about-me .info p {
+    font-size: 2rem;
+  }
+
   .info img {
     margin-top: 40px;
   }
@@ -380,9 +383,19 @@
 }
 
 @media (max-width: 550px) {
+  .invitation p {
+    font-size: 1.8rem;
+    line-height: 25px;
+  }
+
   .about-me .container .btn {
     font-size: 1.8rem;
   }
+
+  .about-me .info p {
+    font-size: 2rem;
+  }
+  
 
   .about-me h1 {
     font-size: 4.2rem;
@@ -409,6 +422,10 @@
 }
 
 @media (max-width: 450px) {
+  .home-page .info .btn {
+    font-size: 1.6rem;
+  }
+
   .sign-up .container h1 {
     font-size: 1.8rem;
   }
