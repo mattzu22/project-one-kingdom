@@ -26,10 +26,10 @@
 
         <nav class="nav">
           <ul class="navegation">
-            <a href="#home" class="ativo"><li>início</li></a>
-            <a href="#about-me"><li>Sobre nós</li></a>
-            <a href="#participants"><li>Participantes</li></a>
-            <a href="#contacts"><li>Contatos</li></a>
+            <li><a href="#home" class="ativo">início</a></li>
+            <li><a href="#about-me">Sobre nós</a></li>
+            <li><a href="#participants">Participantes</a></li>
+            <li><a href="#contacts">Contatos</a></li>
           </ul>
         </nav>
 
@@ -38,17 +38,17 @@
             <div></div>
           </div>
 
-          <ul class="navegation-mobile">
-            <a href="#home"><li>início</li></a>
-            <a href="#about-me"><li>Sobre nós</li></a>
-            <a href="#participants"><li>Participantes</li></a>
-            <a href="#contacts"><li>Próximo evento</li></a>
+          <ul class="nav navegation-mobile">
+            <li><a href="#home" class="ativo">início</a></li>
+            <li><a href="#about-me">Sobre nós</a></li>
+            <li><a href="#participants">Participantes</a></li>
+            <li><a href="#contacts">Contatos</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="home-page">
+    <section class="home-page" id="home">
       <div class="video">
         <video autoplay muted loop>
           <source src="src/videos/videos-tema.mp4" type="video/mp4" />
@@ -116,62 +116,62 @@
       </div>
     </div>
 
-    <section class="participants-page">
-     <div class="container"> 
-      <h1 class="title">Participantes</h1>
+    <section class="participants-page" id="participants">
+      <div class="container">
+        <h1 class="title">Participantes</h1>
 
-      <div class="swiper-button-prev"></div>
-      <div class="participants swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="participant swiper-slide">
-            <img src="./src/imagens/part3.png" alt="participant" />
+        <div class="swiper-button-prev"></div>
+        <div class="participants swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="participant swiper-slide">
+              <img src="./src/imagens/part3.png" alt="participant" />
 
-            <div class="info">
-              <h1 class="name">carlos santos</h1>
-              <p class="office">Cantor</p>
+              <div class="info">
+                <h1 class="name">carlos santos</h1>
+                <p class="office">Cantor</p>
+              </div>
+            </div>
+
+            <div class="participant swiper-slide">
+              <img src="./src/imagens/part2.png" alt="participant" />
+
+              <div class="info">
+                <h1 class="name">joana silva</h1>
+                <p class="office">Coordenadora</p>
+              </div>
+            </div>
+
+            <div class="participant swiper-slide">
+              <img src="./src/imagens/part.png" alt="participant" />
+
+              <div class="info">
+                <h1 class="name">Roberto</h1>
+                <p class="office">Palestrante</p>
+              </div>
+            </div>
+            <div class="participant swiper-slide">
+              <img src="./src/imagens/part.png" alt="participant" />
+
+              <div class="info">
+                <h1 class="name">Roberto</h1>
+                <p class="office">cantor</p>
+              </div>
+            </div>
+
+            <div class="participant swiper-slide">
+              <img src="./src/imagens/part.png" alt="participant" />
+
+              <div class="info">
+                <h1 class="name">Roberto</h1>
+                <p class="office">cantor</p>
+              </div>
             </div>
           </div>
 
-          <div class="participant swiper-slide">
-            <img src="./src/imagens/part2.png" alt="participant" />
-
-            <div class="info">
-              <h1 class="name">joana silva</h1>
-              <p class="office">Coordenadora</p>
-            </div>
-          </div>
-
-          <div class="participant swiper-slide">
-            <img src="./src/imagens/part.png" alt="participant" />
-
-            <div class="info">
-              <h1 class="name">Roberto</h1>
-              <p class="office">Palestrante</p>
-            </div>
-          </div>
-          <div class="participant swiper-slide">
-            <img src="./src/imagens/part.png" alt="participant" />
-
-            <div class="info">
-              <h1 class="name">Roberto</h1>
-              <p class="office">cantor</p>
-            </div>
-          </div>
-
-          <div class="participant swiper-slide">
-            <img src="./src/imagens/part.png" alt="participant" />
-
-            <div class="info">
-              <h1 class="name">Roberto</h1>
-              <p class="office">cantor</p>
-            </div>
-          </div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
-
-        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="swiper-button-next"></div>
-    </div>
     </section>
 
     <section section class="about-event">
@@ -230,7 +230,7 @@
         <p>© 2023 direitos reservados | One Kingdom</p>
       </div>
     </footer>
-    <script src="src/js/letreiro.js"></script>
+    <script src="src/js/index.js"></script>
     <script>
       const center = document.querySelector(".center");
 
@@ -255,8 +255,57 @@
 
     <!-- Initialize Swiper -->
     <script>
+      window.onresize = function (event) {
+        if (window.innerWidth < 1100) {
+          const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        }
+         if(window.innerWidth < 768){
+          const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            freeMode: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        }
+
+        if(window.innerWidth < 550){
+          const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            freeMode: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        }
+
+        if(window.innerWidth > 1100){
+          const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            freeMode: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        }
+      };
+
       const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 4,
         spaceBetween: 30,
         freeMode: true,
         navigation: {

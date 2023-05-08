@@ -19,9 +19,9 @@ body {
   background-color: #0a0a0a;
   color: aliceblue;
   border-bottom: solid 1px #fad02c;
-  /* position: fixed;  */
-  /* width: 100%;
-  z-index: 100; */
+  position: fixed; 
+  width: 100%;
+  z-index: 100;
 }
 
 .bg-nav .menu {
@@ -76,6 +76,7 @@ body {
   align-itens: center;
   height: calc(100vh - 80px);
   max-width: 100%;
+  padding-top: 87px;
 }
 
 .video {
@@ -86,7 +87,8 @@ body {
   object-fit: cover;
   opacity: 80%;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 167px);
+
 }
 
 .home-page .info {
@@ -193,16 +195,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 0 20px;
+  /* min-height: 80vh; */
+  padding: 100px 20px;
   max-width: 100%;
   background: url(../imagens/fundo-sobre-nos.png) center center no-repeat;
+  background-size: cover;
   font-family: "Poppins", sans-serif;
   color: aliceblue;
 }
 
 .about-me h1 {
-  margin: 60px 0 50px 0;
+  margin-bottom: 50px;
   font-family: 'Oswald';
   font-weight: 500;
   font-size: 6rem;
@@ -219,6 +222,7 @@ body {
 
 .about-me .container .img-adm {
   max-width: 600px;
+  min-width: 300px;
   width: 100%;
 }
 
@@ -363,7 +367,7 @@ body {
   display: flex;
   padding-top: 110px;
   justify-content: center;
-  min-height: 125vh;
+  padding: 50px 0 200px;
   background: url(../imagens/bg-event.png) center center no-repeat;
   background-size: cover;
   font-family: "Oswald";
