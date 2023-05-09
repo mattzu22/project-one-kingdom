@@ -436,6 +436,10 @@
     font-size: 4.2rem;
   }
 
+  .about-event .container {
+    padding: 0 20px;
+  }
+
   .about-event .container .title {
     font-size: 4.5rem;
   }
@@ -456,9 +460,20 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 414px) {
   .home-page .info .btn {
     font-size: 1.5rem;
+  }
+
+  .info img {
+    width: 100px;
+  }
+
+  .home-page .info .btn {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    padding: 22px 40px;
   }
 
   .about-me .container .btn {
@@ -474,15 +489,47 @@
     margin-bottom: 100px;
   }
 
-  .about-event .container .title {
-    font-size: 4rem;
-  }
-
   .sign-up .container {
     padding: 35px 50px;
+    top: -95px;
   }
 
   .sign-up .container h1 {
     font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .sign-up .container {
+    padding: 35px 45px;
+  }
+
+  .sign-up .container h1 {
+    font-size: 2rem;
+  }
+
+  .about-event .container .title {
+    font-size: 4.2rem;
+    margin-bottom: 100px;
+  }
+
+  .about-event .info-event {
+    font-size: 3rem;
+  }
+
+  .about-event .info-event .location:nth-child(1) {
+    font-size: 3rem;
+  }
+
+  .about-event .info-event .location p:first-child {
+    font-size: 3rem;
+  }
+
+  .about-me .container .btn {
+    font-size: 1.4rem;
+  }
+
+  .bg-nav .menu {
+    padding: 9px 15px;
   }
 }

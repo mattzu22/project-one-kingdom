@@ -276,6 +276,7 @@ body {
 .participants-page {
   background: url(../imagens/dark-plaster-pattern.png) center center no-repeat;
   background-size: cover;
+  padding: 150px 0 100px;
 }
 
 .participants-page .container{
@@ -283,7 +284,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  padding: 100px 0;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 70px;
@@ -292,7 +293,7 @@ body {
 
 .participants-page .title {
   position: absolute;
-  top: 40px;
+  top: -130px;
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
@@ -426,7 +427,7 @@ body {
   display: flex;
   justify-content: center;
   aling-items: center;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .sign-up .container {
