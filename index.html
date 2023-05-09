@@ -39,7 +39,7 @@
           </div>
 
           <ul class="nav navegation-mobile">
-            <li><a href="#home" class="ativo">início</a></li>
+            <li><a href="#home">início</a></li>
             <li><a href="#about-me">Sobre nós</a></li>
             <li><a href="#participants">Participantes</a></li>
             <li><a href="#contacts">Contatos</a></li>
@@ -98,21 +98,21 @@
       </div>
     </section>
 
-    <div class="letreiro">
-      <div class="letreiro-wrapper">
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
-        <span class="letreiro-texto">One Kingdom</span>
+    <div class="slider">
+      <div class="infinite-slider">
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
+        <span class="text">One Kingdom</span>
       </div>
     </div>
 
@@ -167,8 +167,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="swiper-pagination"></div> -->
         </div>
         <div class="swiper-button-next"></div>
       </div>
@@ -205,24 +203,24 @@
     <footer class="footer" id="contacts">
       <img class="logo-footer" src="./src/imagens/logo.svg" alt="logo" />
 
-      <div class="social">
-        <div class="instagram">
-          <p>one_kingdom_1</p>
-        </div>
-        <div class="phone">
-          <p>(203) 632-7253</p>
-        </div>
-        <div class="email">
-          <p>info@onekingdom.com</p>
-        </div>
-      </div>
+      <address class="social">
+        <a class="instagram">
+          one_kingdom_1
+        </a>
+        <a class="phone">
+          (203) 632-7253
+        </a>
+        <a class="email">
+          info@onekingdom.com
+        </a>
+      </address>
 
-      <nav class="nav-footer">
+      <nav class="nav nav-footer">
         <ul>
-          <a href=""><li>Inicio</li></a>
-          <a href=""><li>Participantes</li></a>
-          <a href=""><li>Sobre nós</li></a>
-          <a href=""><li>Contato</li></a>
+          <li><a href="#home">início</a></li>
+          <li><a href="#about-me">Sobre nós</a></li>
+          <li><a href="#participants">Participantes</a></li>
+          <li><a href="#contacts">Contatos</a></li>
         </ul>
       </nav>
 
@@ -231,92 +229,8 @@
       </div>
     </footer>
     <script src="src/js/index.js"></script>
-    <script>
-      const center = document.querySelector(".center");
 
-      center.addEventListener("click", () => {
-        center.classList.toggle("selecionado");
-        console.log(center);
-
-        const selecionado = document.querySelector(".center.selecionado");
-        console.log(selecionado);
-        const nav = document.querySelector(".navegation-mobile");
-        console.log(nav);
-        if (selecionado) {
-          nav.classList.toggle("selecionado");
-        } else {
-          nav.classList.remove("selecionado");
-        }
-      });
-    </script>
-
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      window.onresize = function (event) {
-        if (window.innerWidth < 1100) {
-          const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            freeMode: true,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        }
-         if(window.innerWidth < 768){
-          const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            freeMode: true,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        }
-
-        if(window.innerWidth < 550){
-          const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            freeMode: true,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        }
-
-        if(window.innerWidth > 1100){
-          const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            freeMode: true,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        }
-      };
-
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        freeMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-      });
-    </script>
   </body>
 </html>

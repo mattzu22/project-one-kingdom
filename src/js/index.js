@@ -50,7 +50,6 @@ function smoothScrollTo(endX, endY, duration) {
 
   duration = typeof duration !== "undefined" ? duration : 400;
 
-  // Easing function
   const easeInOutQuart = (time, from, distance, duration) => {
     if ((time /= duration / 2) < 1)
       return (distance / 2) * time * time * time * time + from;
@@ -65,7 +64,77 @@ function smoothScrollTo(endX, endY, duration) {
       clearInterval(timer);
     }
     window.scroll(newX, newY);
-  }, 1000 / 60); // 60 fps
+  }, 1000 / 60);
 }
+
+
+
+const center = document.querySelector(".center");
+
+center.addEventListener("click", () => {
+  center.classList.toggle("selecionado");
+  console.log(center);
+
+  const selecionado = document.querySelector(".center.selecionado");
+  console.log(selecionado);
+  const nav = document.querySelector(".navegation-mobile");
+  console.log(nav);
+  if (selecionado) {
+    nav.classList.toggle("selecionado");
+  } else {
+    nav.classList.remove("selecionado");
+  }
+});
+
+
+
+window.onresize = function (event) {
+  if (window.innerWidth < 1100) {
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+  if (window.innerWidth < 768) {
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      freeMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+
+  if (window.innerWidth < 550) {
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      freeMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+
+  if (window.innerWidth > 1100) {
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      freeMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+};
 
 
