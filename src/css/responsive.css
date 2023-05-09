@@ -61,10 +61,6 @@
     transition: 0.3s ease-in-out;
   }
 
-  /* .about-me .container .btn {
-    font-size: 2rem;
-  } */
-
   .about-me .container {
     gap: 5rem;
   }
