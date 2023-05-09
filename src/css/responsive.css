@@ -1,20 +1,4 @@
-@media (max-width: 1550px) {
-  .verse h3 {
-    font-size: 2.3rem;
-  }
-}
-
-@media (max-width: 1350px) {
-  .about-me .container .btn {
-    font-size: 2.2rem;
-  }
-}
-
 @media (max-width: 1200px) {
-  .verse h3 {
-    font-size: 2rem;
-  }
-
   .about-me .container .btn {
     font-size: 2rem;
   }
@@ -22,7 +6,7 @@
 
 @media (max-width: 1070px) {
   .verse h3 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
   }
   .about-me .container .btn {
     font-size: 1.8rem;
@@ -31,7 +15,7 @@
 
 @media (max-width: 900px) {
   .verse h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -99,17 +83,6 @@
     font-weight: 700;
     font-size: 2.3rem;
     width: 100%;
-  }
-
-  .sign-up .container h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-  }
-
-  .sign-up .container .btn {
-    width: 300px;
-    padding: 10px;
-    font-size: 2.5rem;
   }
 
   .footer .logo-footer {
@@ -201,6 +174,24 @@
     transition: 1s ease-in-out;
   }
 
+  .home-page {
+    padding-top: 76px;
+  }
+
+  .home-page .info {
+    width: 100%;
+    background: url(../gif/video.gif) center center no-repeat;
+    background-size: cover;
+  }
+
+  .home-page .info .btn {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    padding: 22px 68px;
+    font-size: 2rem;
+  }
+
   .center {
     width: 30px;
     display: block;
@@ -234,12 +225,6 @@
     display: none;
   }
 
-  .home-page .info {
-    width: 100%;
-    background: url(../gif/video.gif) center center no-repeat;
-    background-size: cover;
-  }
-
   .invitation h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -249,18 +234,6 @@
     font-size: 2.2rem;
     line-height: 3.3rem;
     letter-spacing: 1.5px;
-  }
-
-  .home-page .info .btn {
-    color: #ffffff;
-    border: 3px solid #ffffff;
-    background-color: transparent;
-    padding: 22px 68px;
-    font-size: 2rem;
-  }
-
-  .about-event .container .title {
-    margin-bottom: 100px;
   }
 
   .about-event .info-event {
@@ -280,16 +253,13 @@
     width: 100%;
     font-size: 6rem;
     text-align: start;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
     text-transform: uppercase;
   }
 
-  .sign-up .container {
-    padding: 50px 100px;
-  }
-
   .sign-up .container h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
   }
 
   .footer {
@@ -302,6 +272,16 @@
     position: absolute;
     right: 20px;
     bottom: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sign-up .container h1 {
+    font-size: 3.3rem;
+  }
+
+  .sign-up .container .btn {
+    font-size: 2.3rem;
   }
 }
 
@@ -323,8 +303,16 @@
     margin-top: 40px;
   }
 
+  .participants-page .title {
+    font-size: 5rem;
+  }
+
   .home-page .info .btn {
     margin-top: 60px;
+  }
+
+  .about-event .container .title {
+    font-size: 5.3rem;
   }
 
   .about-event .info-event {
@@ -339,46 +327,19 @@
     font-size: 4rem;
   }
 
-  .sign-up .container {
-    padding: 40px 60px;
-    top: -95px;
-  }
-
   .sign-up .container h1 {
-    font-size: 2rem;
+    font-size: 2.9rem;
   }
 
   .sign-up .container .btn {
-    font-size: 1.8rem;
-    width: 200px;
-  }
-
-  .sign-up {
-    padding: 0 10px;
-  }
-}
-
-@media (max-width: 550px) {
-  .invitation p {
-    font-size: 1.8rem;
-    line-height: 25px;
-  }
-
-  .about-me .container .btn {
-    font-size: 1.8rem;
-  }
-
-  .about-me .info p {
     font-size: 2rem;
-  }
-
-  .about-me h1 {
-    font-size: 4.2rem;
+    width: 240px;
   }
 
   .footer {
     flex-direction: column;
     align-items: start;
+    padding: 0 30px 70px 30px;
   }
 
   .footer .social {
@@ -396,18 +357,83 @@
   }
 }
 
-@media (max-width: 450px) {
-  .home-page .info .btn {
-    font-size: 1.6rem;
-  }
-
+@media (max-width: 600px) {
   .sign-up .container h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   .sign-up .container .btn {
-    font-size: 1.4rem;
-    width: 180px;
+    font-size: 1.9rem;
+    width: 210px;
+  }
+}
+
+@media (max-width: 550px) {
+  .bg-nav .menu {
+    padding: 9px 35px;
+  }
+
+  .invitation p {
+    font-size: 1.8rem;
+    line-height: 25px;
+  }
+
+  .about-me .container .btn {
+    font-size: 1.8rem;
+  }
+
+  .about-me .info p {
+    font-size: 2rem;
+  }
+
+  .about-me h1 {
+    font-size: 4.5rem;
+  }
+
+  .sign-up .container {
+    padding: 40px 60px;
+  }
+
+  .sign-up .container h1 {
+    font-size: 2.6rem;
+  }
+
+  .sign-up .container .btn {
+    font-size: 1.9rem;
+    width: 210px;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-page .info .btn {
+    font-size: 1.7rem;
+  }
+
+  .invitation h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .invitation p {
+    font-size: 1.7rem;
+    line-height: 25px;
+  }
+
+  .sign-up .container {
+    padding: 35px 50px;
+  }
+
+  .sign-up .container h1 {
+    font-size: 2.3rem;
+  }
+
+  .sign-up .container .btn {
+    font-size: 1.6rem;
+    width: 170px;
+  }
+
+  .about-me h1 {
+    font-size: 4.2rem;
   }
 
   .about-event .container .title {
@@ -430,9 +456,17 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
   .home-page .info .btn {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  .about-me .container .btn {
+    font-size: 1.5rem;
+  }
+
+  .about-me .info p {
+    font-size: 1.8rem;
   }
 
   .about-event .container .title {
@@ -440,23 +474,15 @@
     margin-bottom: 100px;
   }
 
-  .sign-up .container {
-    padding: 35px 45px;
-  }
-}
-
-@media (max-width: 420px) {
-  .about-me .container .btn {
-    font-size: 1.4rem;
-  }
   .about-event .container .title {
-    font-size: 3.6rem;
-  }
-  .sign-up .container h1 {
-    font-size: 1.6rem;
+    font-size: 4rem;
   }
 
-  .about-me .info p {
-    font-size: 1.7rem;
+  .sign-up .container {
+    padding: 35px 50px;
+  }
+
+  .sign-up .container h1 {
+    font-size: 2.3rem;
   }
 }

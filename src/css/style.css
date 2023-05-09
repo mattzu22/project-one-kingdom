@@ -331,7 +331,7 @@ body {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 400;
-  font-size: 2.7rem;
+  font-size: 2.6rem;
   color: #fad02c;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -339,7 +339,7 @@ body {
 
 .participant .office {
   font-family: 'Poppins';
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #ffffff;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -349,7 +349,8 @@ body {
   opacity: 80%;
   position: relative;
   display: block;
-  width: 100%;
+  width: 260px;
+  max-width: 100%;
   height: 360px;
   object-fit: cover;
 }
@@ -449,19 +450,20 @@ body {
   font-weight: 500;
   font-size: 4rem;
   margin-bottom: 55px;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
 .sign-up .container .btn {
-  width: 500px;
+  width: 300px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 8px;
   background: linear-gradient(151.74deg, #efbf01 0.67%, #89700e 162.3%);
   border-radius: 10px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #000000;
 }
 
@@ -471,6 +473,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding: 0 20px 70px 20px;
   color: white;
   max-width: 1200px;
@@ -531,9 +534,12 @@ body {
   display: block;
 }
 
+.footer .nav-footer ul li {
+  margin-bottom: 10px;
+}
+
 .footer .nav-footer ul li a{
   font-family: "Poppins";
-  margin-bottom: 10px;
   font-size: 1.7rem;
   color: #ffffff;
 }
