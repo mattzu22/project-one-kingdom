@@ -147,15 +147,7 @@
     color: #ffffff;
   }
 
-  .about-event .info-event .location .unit-1 {
-    font-size: 4.5rem;
-  }
-
-  .about-event .info-event .location .pais {
-    font-size: 4.5rem;
-  }
-
-  .about-event .info-event .location p:first-child {
+  .about-event .info-event {
     font-size: 4.5rem;
   }
 
@@ -163,14 +155,18 @@
     font-size: 4.5rem;
   }
 
-  .about-event .info-event .info .date {
+  .about-event .info-event .location p:first-child {
     font-size: 4.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .bg-nav .menu .logo {
-    width: 140px;
+    width: 120px;
+  }
+
+  .bg-nav .menu {
+    padding: 9px 60px;
   }
 
   .bg-nav .menu .nav .navegation {
@@ -182,6 +178,7 @@
     font-size: 5rem;
     color: #ffd242;
     margin-bottom: 20px;
+    transition: 1s ease-in-out;
   }
 
   .bg-nav .menu .nav-mobile {
@@ -201,11 +198,11 @@
     gap: 33px;
     left: 0;
     width: 100%;
-    min-height: calc(100vh - 84px);
+    min-height: calc(100vh - 74px);
     background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(20px);
-    margin-top: 36px;
-    transition: 1s ease;
+    margin-top: 19px;
+    transition: 1s ease-in-out;
   }
 
   .center {
@@ -334,15 +331,7 @@
     margin-top: 60px;
   }
 
-  .about-event .info-event .location .unit-1 {
-    font-size: 4rem;
-  }
-
-  .about-event .info-event .location .pais {
-    font-size: 4rem;
-  }
-
-  .about-event .info-event .location p:first-child {
+  .about-event .info-event {
     font-size: 4rem;
   }
 
@@ -350,11 +339,7 @@
     font-size: 4rem;
   }
 
-  .about-event .info-event .info .date {
-    font-size: 4rem;
-  }
-
-  .about-event .info-event .info .hour {
+  .about-event .info-event .location p:first-child {
     font-size: 4rem;
   }
 
@@ -435,6 +420,17 @@
 
   .about-me .container .btn {
     font-size: 1.6rem;
+  }
+  .about-event .info-event {
+    font-size: 3.2rem;
+  }
+
+  .about-event .info-event .location:nth-child(1) {
+    font-size: 3.2rem;
+  }
+
+  .about-event .info-event .location p:first-child {
+    font-size: 3.2rem;
   }
 }
 
