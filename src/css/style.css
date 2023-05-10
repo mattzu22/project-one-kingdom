@@ -45,12 +45,17 @@ body {
   color: aliceblue;
 }
 
-.bg-nav .menu .navegation a.ativo:after {
+.bg-nav .menu .navegation a.ativo::after {
   content: "";
   border-bottom: 2px solid #fad02c;
   display: block;
   margin: 0 auto;
   width: 20px;
+  transition: 0.5s ease;
+}
+
+.bg-nav .menu .navegation a:hover::after {
+  width: 100%;
 }
 
 .bg-nav .menu .nav-mobile .navegation-mobile {
@@ -325,6 +330,11 @@ body {
 .participants-page .participants .participant .info {
   position: absolute;
   bottom: 30PX;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: white !important;
 }
 
 .participant .name {

@@ -142,12 +142,12 @@
     display: none;
   }
 
-  .bg-nav .menu .nav-mobile .navegation-mobile a {
+  .bg-nav .menu .nav-mobile .navegation-mobile a{
     font-family: "Oswald";
     font-size: 5rem;
     color: #ffd242;
     margin-bottom: 20px;
-    transition: 1s ease-in-out;
+
   }
 
   .bg-nav .menu .nav-mobile {
@@ -171,7 +171,6 @@
     background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(20px);
     margin-top: 19px;
-    transition: 1s ease-in-out;
   }
 
   .home-page {

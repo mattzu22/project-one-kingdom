@@ -22,10 +22,11 @@ function addAndRemoveClass(item){
 
   item.classList.add('ativo')
 
-  // const to = getScrollTopByHref(event.target);
   // const id = event.target.getAttribute("href");
   // const altura = document.querySelector(id).offsetTop;
-  //  if (to == altura) {
+  
+  // console.log(altura);
+  //  if (altura == 0) {
   //   console.log('chegou');
   //  }
 }
@@ -36,7 +37,6 @@ function scrollToIdOnClick(event) {
   const to = getScrollTopByHref(event.target) - 50;
 
   scrollToPosition(to);
-
 }
 
 function getScrollTopByHref(element) {
@@ -47,7 +47,6 @@ function getScrollTopByHref(element) {
 function scrollToPosition(to) {
   smoothScrollTo(0, to, 500);
 }
-
 
 function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;

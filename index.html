@@ -194,8 +194,8 @@
 
     <section class="sign-up">
       <div class="container">
-        <h1>entre em contato conosco</h1>
-        <a href="#" class="btn">INSCREVA-SE</a>
+        <h1>entre em contato conosco!</h1>
+        <a href="https://api.whatsapp.com/send?phone=12036327253" target="_blank" class="btn">CLIQUE AQUI</a>
       </div>
     </section>
 
@@ -203,8 +203,14 @@
       <img class="logo-footer" src="./src/imagens/logo.svg" alt="logo" />
 
       <address class="social">
-        <a class="instagram"> one_kingdom_1 </a>
-        <a class="phone"> (203) 632-7253 </a>
+        <a
+          href="https://www.instagram.com/one_kingdom_1/"
+          class="instagram"
+          target="_blank"
+        >
+          one_kingdom_1
+        </a>
+        <a class="phone"> +1 (203) 632-7253 </a>
         <a class="email"> info@onekingdom.com </a>
       </address>
 
@@ -234,23 +240,22 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints:{
+          300: {
+            slidesPerView: 1
+          },
+          620:{
+            slidesPerView: 2
+          },
+          800:{
+            slidesPerView: 3,
+          },
+          1100:{
+            slidesPerView: 4
+          }
+        }
       });
 
-      function updateSwiper() {
-        if (window.innerWidth < 550) {
-          swiper.params.slidesPerView = 1;
-        } else if (window.innerWidth < 768) {
-          swiper.params.slidesPerView = 2;
-        } else if (window.innerWidth < 1100) {
-          swiper.params.slidesPerView = 3;
-        } else {
-          swiper.params.slidesPerView = 4;
-        }
-
-        swiper.update();
-      }
-
-      window.addEventListener("resize", updateSwiper);
     </script>
   </body>
 </html>
