@@ -68,7 +68,8 @@
 
     <div class="verse">
       <h3>
-        "Há um só corpo e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação."
+        "Há um só corpo e um só Espírito, como também fostes chamados em uma só
+        esperança da vossa vocação."
       </h3>
     </div>
 
@@ -178,8 +179,8 @@
           <div class="location">
             <p>Faith church</p>
             <p>
-              600 Danbury Rd<span class="unit-1">New Milford, CT
-                06776</span><span class="pais">United States</span>
+              600 Danbury Rd<span class="unit-1">New Milford, CT 06776</span
+              ><span class="pais">United States</span>
             </p>
           </div>
 
@@ -202,15 +203,9 @@
       <img class="logo-footer" src="./src/imagens/logo.svg" alt="logo" />
 
       <address class="social">
-        <a class="instagram">
-          one_kingdom_1
-        </a>
-        <a class="phone">
-          (203) 632-7253
-        </a>
-        <a class="email">
-          info@onekingdom.com
-        </a>
+        <a class="instagram"> one_kingdom_1 </a>
+        <a class="phone"> (203) 632-7253 </a>
+        <a class="email"> info@onekingdom.com </a>
       </address>
 
       <nav class="nav nav-footer">
@@ -230,5 +225,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      function updateSwiper() {
+        if (window.innerWidth < 550) {
+          swiper.params.slidesPerView = 1;
+        } else if (window.innerWidth < 768) {
+          swiper.params.slidesPerView = 2;
+        } else if (window.innerWidth < 1100) {
+          swiper.params.slidesPerView = 3;
+        } else {
+          swiper.params.slidesPerView = 4;
+        }
+
+        swiper.update();
+      }
+
+      window.addEventListener("resize", updateSwiper);
+    </script>
   </body>
 </html>
