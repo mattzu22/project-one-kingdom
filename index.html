@@ -37,13 +37,19 @@
           <div class="center">
             <div></div>
           </div>
-
-          <ul class="nav navegation-mobile">
-            <li><a href="#home">início</a></li>
-            <li><a href="#about-me">Sobre nós</a></li>
-            <li><a href="#participants">Participantes</a></li>
-            <li><a href="#contacts">Contatos</a></li>
-          </ul>
+          <div class="container">
+            <ul class="nav navegation-mobile">
+              <li><a href="#home">início</a></li>
+              <li><a href="#about-me">Sobre nós</a></li>
+              <li><a href="#participants">Participantes</a></li>
+              <li><a href="#contacts">Contatos</a></li>
+                <ul class="social">
+                  <li><a  href="https://www.instagram.com/one_kingdom_1/" target="_blank"><img src="./src/imagens/instagram.png" alt="instagram"></a></li>
+                  <li><a href="#"><img src="./src/imagens/email.png" alt="email"></a></li>
+                  <li><a href="https://api.whatsapp.com/send?phone=12036327253" target="_blank"><img src="./src/imagens/phone.png" alt="phone"></a></li>
+                </ul>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -195,7 +201,12 @@
     <section class="sign-up">
       <div class="container">
         <h1>entre em contato conosco!</h1>
-        <a href="https://api.whatsapp.com/send?phone=12036327253" target="_blank" class="btn">CLIQUE AQUI</a>
+        <a
+          href="https://api.whatsapp.com/send?phone=12036327253"
+          target="_blank"
+          class="btn"
+          >CLIQUE AQUI</a
+        >
       </div>
     </section>
 
@@ -240,22 +251,21 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        breakpoints:{
+        breakpoints: {
           300: {
-            slidesPerView: 1
+            slidesPerView: 1,
           },
-          620:{
-            slidesPerView: 2
+          620: {
+            slidesPerView: 2,
           },
-          800:{
+          800: {
             slidesPerView: 3,
           },
-          1100:{
-            slidesPerView: 4
-          }
-        }
+          1100: {
+            slidesPerView: 4,
+          },
+        },
       });
-
     </script>
   </body>
 </html>

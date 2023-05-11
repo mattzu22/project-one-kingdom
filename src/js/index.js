@@ -8,28 +8,61 @@
 const menuItems = document.querySelectorAll('.nav a[href^="#"]');
 
 menuItems.forEach((item) => {
-  item.addEventListener("click", ()=>{
-    scrollToIdOnClick(event)
+  item.addEventListener("click", () => {
+    scrollToIdOnClick(event);
 
-    addAndRemoveClass(item)
+    addAndRemoveClass(item);
   });
 });
 
-function addAndRemoveClass(item){
+function addAndRemoveClass(item) {
   const ativo = document.querySelector(".ativo");
-  
-  ativo.classList.remove('ativo')
 
-  item.classList.add('ativo')
+  ativo.classList.remove("ativo");
+
+  item.classList.add("ativo");
+
+  const nav = document.querySelector(".navegation-mobile");
+  const selecionado = document.querySelector(".center.selecionado");
+
+  if (item) {
+    nav.classList.remove("selecionado");
+    selecionado.classList.remove("selecionado");
+  }
+
+  const alturaScroll = window. pageYOffset
+ 
+
+  if (alturaScroll === 921) {
+    item.offsetTop
+}
 
   // const id = event.target.getAttribute("href");
   // const altura = document.querySelector(id).offsetTop;
-  
+
   // console.log(altura);
   //  if (altura == 0) {
   //   console.log('chegou');
   //  }
 }
+
+const center = document.querySelector(".center");
+
+center.addEventListener("click", () => {
+  center.classList.toggle("selecionado");
+
+  const selecionado = document.querySelector(".center.selecionado");
+  const nav = document.querySelector(".navegation-mobile");
+
+  if (selecionado) {
+    nav.classList.toggle("selecionado");
+  } else {
+    nav.classList.remove("selecionado");
+  }
+});
+
+
+
 
 function scrollToIdOnClick(event) {
   event.preventDefault();
@@ -73,20 +106,3 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60);
 }
-
-const center = document.querySelector(".center");
-
-center.addEventListener("click", () => {
-  center.classList.toggle("selecionado");
-  console.log(center);
-
-  const selecionado = document.querySelector(".center.selecionado");
-  console.log(selecionado);
-  const nav = document.querySelector(".navegation-mobile");
-  console.log(nav);
-  if (selecionado) {
-    nav.classList.toggle("selecionado");
-  } else {
-    nav.classList.remove("selecionado");
-  }
-});

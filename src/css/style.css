@@ -10,6 +10,10 @@ body {
 }
 
 /* MENU */
+.social{
+  display: flex;
+  gap: 40px;
+}
 
 .bg-nav .menu .logo {
   width: 140px;
@@ -55,7 +59,20 @@ body {
 }
 
 .bg-nav .menu .navegation a:hover::after {
-  width: 100%;
+  content: "";
+  border-bottom: 2px solid #fad02c;
+  display: block;
+  margin: 0 auto;
+  animation: effect 0.5s ;
+}
+
+@keyframes effect {
+	from {
+		width: 20px;
+	}
+	to {
+		width: 100%;
+	}
 }
 
 .bg-nav .menu .nav-mobile .navegation-mobile {

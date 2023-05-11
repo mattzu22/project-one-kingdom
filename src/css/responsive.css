@@ -147,7 +147,6 @@
     font-size: 5rem;
     color: #ffd242;
     margin-bottom: 20px;
-
   }
 
   .bg-nav .menu .nav-mobile {
@@ -156,6 +155,19 @@
 
   .sign-up .container {
     top: -110px;
+  }
+
+  .bg-nav .menu .nav-mobile .navegation-mobile {
+    animation: effect 0.5s alternate;
+  }
+
+  @keyframes effect {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .bg-nav .menu .nav-mobile .navegation-mobile.selecionado {
@@ -364,6 +376,14 @@
   .sign-up .container .btn {
     font-size: 1.9rem;
     width: 210px;
+  }
+}
+
+@media (max-width: 620px){
+  .swiper-slide img {
+    width: 350px;
+    height: 420px;
+    object-fit: 100%;
   }
 }
 
