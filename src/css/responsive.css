@@ -24,10 +24,6 @@
     gap: 40px;
   }
 
-  .bg-nav .menu {
-    padding: 20px 60px;
-  }
-
   .video {
     width: 50%;
   }
@@ -38,11 +34,8 @@
 
   .home-page .info .btn {
     padding: 22px 68px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     border-radius: 15px;
-    transition: 0.3s ease-in-out;
   }
 
   .about-me .container {
@@ -67,11 +60,11 @@
     margin: 0 auto;
   }
 
-  .about-me {
+  /* .about-me {
     background: url(../imagens/fundo-sobre-nos.png) center center no-repeat;
     background-size: cover;
     padding-bottom: 100px;
-  }
+  } */
 
   .about-me .container .img-adm {
     margin: 0 auto;
@@ -105,12 +98,11 @@
   }
 
   .footer .social {
-    gap: 15px;
+    gap: 16px;
     font-size: 1.4rem;
   }
 
   .footer .nav-footer ul li {
-    font-family: "Poppins";
     margin-bottom: 6px;
     font-size: 1.4rem;
     color: #ffffff;
@@ -129,6 +121,12 @@
   }
 }
 
+@media (max-width: 862px){
+  .about-event .container .info{
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .bg-nav .menu .logo {
     width: 120px;
@@ -142,7 +140,7 @@
     display: none;
   }
 
-  .bg-nav .menu .nav-mobile .navegation-mobile a{
+  .bg-nav .menu .nav-mobile .navegation-mobile a {
     font-family: "Oswald";
     font-size: 5rem;
     color: #ffd242;
@@ -196,9 +194,7 @@
   }
 
   .home-page .info .btn {
-    color: #ffffff;
     border: 3px solid #ffffff;
-    background-color: transparent;
     padding: 22px 68px;
     font-size: 2rem;
   }
@@ -252,6 +248,10 @@
     align-items: start;
   }
 
+  .about-event .container .info{
+    text-align: start;
+  }
+
   .about-event .info-event .info .date {
     margin-bottom: 0;
   }
@@ -299,7 +299,6 @@
 @media (max-width: 650px) {
   .about-me .container .btn {
     font-size: 2rem;
-    margin: 0 auto;
   }
 
   .about-me h1 {
@@ -370,7 +369,7 @@
 
 @media (max-width: 600px) {
   .sign-up .container h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 
   .sign-up .container .btn {
@@ -379,7 +378,7 @@
   }
 }
 
-@media (max-width: 620px){
+@media (max-width: 620px) {
   .swiper-slide img {
     width: 350px;
     height: 420px;
@@ -410,16 +409,16 @@
   }
 
   .sign-up .container {
-    padding: 40px 60px;
+    padding: 40px 70px;
   }
 
   .sign-up .container h1 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   .sign-up .container .btn {
-    font-size: 1.9rem;
-    width: 210px;
+    font-size: 1.8rem;
+    width: 200px;
   }
 }
 
@@ -439,7 +438,7 @@
   }
 
   .sign-up .container {
-    padding: 35px 50px;
+    padding: 35px 60px;
   }
 
   .sign-up .container h1 {
@@ -447,12 +446,12 @@
   }
 
   .sign-up .container .btn {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     width: 170px;
   }
 
   .about-me h1 {
-    font-size: 4.2rem;
+    font-size: 4.1rem;
   }
 
   .about-event .container {
@@ -466,6 +465,7 @@
   .about-me .container .btn {
     font-size: 1.6rem;
   }
+
   .about-event .info-event {
     font-size: 3.2rem;
   }
@@ -477,6 +477,11 @@
   .about-event .info-event .location p:first-child {
     font-size: 3.2rem;
   }
+
+  .text {
+    padding: 3px;
+    font-size: 5rem;
+  }
 }
 
 @media (max-width: 414px) {
@@ -485,7 +490,7 @@
   }
 
   .info img {
-    width: 100px;
+    width: 130px;
   }
 
   .home-page .info .btn {
@@ -509,7 +514,7 @@
   }
 
   .sign-up .container {
-    padding: 35px 50px;
+    padding: 35px 45px;
     top: -95px;
   }
 
@@ -520,17 +525,22 @@
 
 @media (max-width: 375px) {
   .sign-up .container {
-    padding: 35px 45px;
+    padding: 35px 50px;
   }
 
   .sign-up .container h1 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   .about-event .container .title {
     font-size: 4.2rem;
     margin-bottom: 100px;
   }
+
+  .sign-up .container .btn {
+    font-size: 1.4rem;
+    width: 160px;
+}
 
   .about-event .info-event {
     font-size: 3rem;

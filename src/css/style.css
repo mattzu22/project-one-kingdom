@@ -5,15 +5,11 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "poppins", sans-serif;
   background-color: black;
 }
 
 /* MENU */
-.social{
-  display: flex;
-  gap: 40px;
-}
 
 .bg-nav .menu .logo {
   width: 140px;
@@ -21,11 +17,10 @@ body {
 
 .bg-nav {
   background-color: #0a0a0a;
-  color: aliceblue;
   border-bottom: solid 1px #fad02c;
-  position: fixed; 
+  position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 }
 
 .bg-nav .menu {
@@ -35,8 +30,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 11px 100px;
-  background-color: #0a0a0a;
-  font-family: "Poppins", sans-serif;
   position: relative;
 }
 
@@ -63,16 +56,21 @@ body {
   border-bottom: 2px solid #fad02c;
   display: block;
   margin: 0 auto;
-  animation: effect 0.5s ;
+  animation: effect 0.5s;
 }
 
 @keyframes effect {
-	from {
-		width: 20px;
-	}
-	to {
-		width: 100%;
-	}
+  from {
+    width: 20px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.nav-mobile .container .navegation-mobile .social {
+  display: flex;
+  gap: 40px;
 }
 
 .bg-nav .menu .nav-mobile .navegation-mobile {
@@ -87,7 +85,7 @@ body {
   display: none;
 }
 
-.center{
+.center {
   display: none;
 }
 
@@ -107,10 +105,9 @@ body {
 
 .video video {
   object-fit: cover;
-  opacity: 90%;
+  opacity: 80%;
   width: 100%;
   height: calc(100vh - 167px);
-
 }
 
 .home-page .info {
@@ -125,14 +122,11 @@ body {
 }
 
 .invitation h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
 .invitation p {
-  font-family: "Poppins", sans-serif; 
   font-size: 1.8rem;
   line-height: 27px;
 }
@@ -150,10 +144,9 @@ body {
   margin-top: 70px;
   background-color: transparent;
   padding: 22px 68px;
-  font-family: "Poppins", sans-serif;
   font-size: 2.7rem;
   border-radius: 15px;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .home-page .info .btn:hover {
@@ -163,51 +156,52 @@ body {
 
 /* VERSE  */
 
-.verse{
+.verse {
   text-align: center;
   border: 2px solid;
   border-color: #fad02c #0a0a0a #fad02c #0a0a0a;
-  padding: 15px 0;
+  padding: 13px 0;
   width: 100%;
   background-color: #ffffff;
 }
 
 .verse h3 {
   font-family: "Bebas Neue";
-  font-style: normal;
   font-weight: 400;
   font-size: 3rem;
   text-transform: uppercase;
   color: #000000;
 }
 
+/* SLIDER */
+
 .slider {
-    width: 100%;
-    overflow: hidden;
-    background-color: #ffffff;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
 .infinite-slider {
-    display: inline-flex;
-    animation: slider 35s linear infinite;
+  display: inline-flex;
+  animation: slider 35s linear infinite;
 }
 
 .text {
-    padding: 5px ;
-    font-family: 'Bebas Neue', cursive;
-    white-space: nowrap;
-    font-size: 7rem;
-    margin-right: 100px;
+  padding: 5px;
+  font-family: "Bebas Neue", cursive;
+  white-space: nowrap;
+  font-size: 7rem;
+  margin-right: 100px;
 }
 
 @keyframes slider {
-    0% {
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
 
-    100% {
-        transform: translateX(-50%);
-    }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* ABOUT ME  */
@@ -221,13 +215,12 @@ body {
   max-width: 100%;
   background: url(../imagens/fundo-sobre-nos.png) center center no-repeat;
   background-size: cover;
-  font-family: "Poppins", sans-serif;
   color: aliceblue;
 }
 
 .about-me h1 {
   margin-bottom: 50px;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-weight: 500;
   font-size: 6rem;
   text-transform: uppercase;
@@ -238,7 +231,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
+  gap: 80px;
 }
 
 .about-me .container .img-adm {
@@ -263,13 +256,9 @@ body {
 .about-me .info p {
   margin-bottom: 40px;
   font-size: 2.2rem;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 39px;
+  line-height: 40px;
   color: #ffffff;
 }
-
 
 .about-me .container .btn {
   display: block;
@@ -278,11 +267,10 @@ body {
   margin-top: 35px;
   background: #fad02c;
   padding: 15px 0;
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   border-radius: 4px;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .about-me .btn:hover {
@@ -292,21 +280,18 @@ body {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
 /* PARTICIPANTES */
 
 .participants-page {
   background: url(../imagens/dark-plaster-pattern.png) center center no-repeat;
   background-size: cover;
-  padding: 220px 0 170px;
+  padding: 240px 0 170px;
 }
 
-.participants-page .container{
+.participants-page .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  max-width: 1300px;
+  max-width: 1270px;
   margin: 0 auto;
   padding: 0 60px;
   position: relative;
@@ -314,9 +299,8 @@ body {
 
 .participants-page .title {
   position: absolute;
-  top: -130px;
+  top: -150px;
   font-family: "Oswald";
-  font-style: normal;
   font-weight: 500;
   font-size: 5.5rem;
   color: #ffffff;
@@ -341,21 +325,20 @@ body {
   flex-direction: column !important;
   justify-content: end !important;
   align-items: center !important;
-  color: white;
+  color: aliceblue;
 }
 
 .participants-page .participants .participant .info {
   position: absolute;
-  bottom: 30PX;
+  bottom: 30px;
 }
 
 .swiper-button-next,
-.swiper-button-prev{
+.swiper-button-prev {
   color: white !important;
 }
 
 .participant .name {
-  font-family: "Poppins";
   font-style: italic;
   font-weight: 400;
   font-size: 2.6rem;
@@ -365,7 +348,6 @@ body {
 }
 
 .participant .office {
-  font-family: 'Poppins';
   font-size: 1.5rem;
   color: #ffffff;
   margin-block-start: 0;
@@ -420,6 +402,7 @@ body {
 .about-event .info-event {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 
@@ -445,7 +428,12 @@ body {
 
 .about-event .info-event .info .date {
   margin-bottom: 40px;
+  text-align: center;
 }
+
+/* .about-event .info-event .info .date span{
+  display: block;
+} */
 
 /* SING-UP */
 
@@ -473,7 +461,6 @@ body {
 
 .sign-up .container h1 {
   font-family: "Oswald";
-  font-style: normal;
   font-weight: 500;
   font-size: 4rem;
   margin-bottom: 55px;
@@ -487,8 +474,6 @@ body {
   padding: 8px;
   background: linear-gradient(151.74deg, #efbf01 0.67%, #89700e 162.3%);
   border-radius: 10px;
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 600;
   font-size: 2.8rem;
   color: #000000;
@@ -528,8 +513,7 @@ body {
   gap: 10px;
 }
 
-.footer .social a{
-  font-family: "Poppins";
+.footer .social a {
   font-size: 1.7rem;
   color: #ffffff;
 }
@@ -565,8 +549,7 @@ body {
   margin-bottom: 10px;
 }
 
-.footer .nav-footer ul li a{
-  font-family: "Poppins";
+.footer .nav-footer ul li a {
   font-size: 1.7rem;
   color: #ffffff;
 }
