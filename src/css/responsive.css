@@ -24,10 +24,6 @@
     gap: 40px;
   }
 
-  .video {
-    width: 50%;
-  }
-
   .home-page .info {
     width: 50%;
   }
@@ -121,9 +117,19 @@
   }
 }
 
-@media (max-width: 862px){
-  .about-event .container .info{
+@media (max-width: 862px) {
+  .about-event .container .info {
     text-align: center;
+  }
+
+  .slider-home {
+    width: 100%;
+  }
+
+  .home-page .info {
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
   }
 }
 
@@ -187,12 +193,6 @@
     padding-top: 76px;
   }
 
-  .home-page .info {
-    width: 100%;
-    background: url(../gif/video.gif) center center no-repeat;
-    background-size: cover;
-  }
-
   .home-page .info .btn {
     border: 3px solid #ffffff;
     padding: 22px 68px;
@@ -228,10 +228,6 @@
     transform: scale(0);
   }
 
-  .video {
-    display: none;
-  }
-
   .invitation h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -248,7 +244,7 @@
     align-items: start;
   }
 
-  .about-event .container .info{
+  .about-event .container .info {
     text-align: start;
   }
 
@@ -540,7 +536,7 @@
   .sign-up .container .btn {
     font-size: 1.4rem;
     width: 160px;
-}
+  }
 
   .about-event .info-event {
     font-size: 3rem;

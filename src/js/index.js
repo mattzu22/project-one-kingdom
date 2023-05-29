@@ -29,22 +29,8 @@ function addAndRemoveClass(item) {
     nav.classList.remove("selecionado");
     selecionado.classList.remove("selecionado");
   }
-
-  const alturaScroll = window. pageYOffset
- 
-
-  if (alturaScroll === 921) {
-    item.offsetTop
 }
 
-  // const id = event.target.getAttribute("href");
-  // const altura = document.querySelector(id).offsetTop;
-
-  // console.log(altura);
-  //  if (altura == 0) {
-  //   console.log('chegou');
-  //  }
-}
 
 const center = document.querySelector(".center");
 
@@ -106,3 +92,29 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60);
 }
+
+
+let time = 3000,
+    curretImageIndex = 0
+    images = document.querySelectorAll("#slider img")
+    max = images.length;
+
+function nextImage(){
+
+   images[curretImageIndex].classList.remove("selected")
+
+    curretImageIndex++
+
+    if(curretImageIndex >= max)
+       curretImageIndex = 0
+
+    images[curretImageIndex].classList.add("selected")
+}
+
+function start(){
+    setInterval(() => {
+    nextImage()
+    }, time)
+} 
+
+window.addEventListener("load", start)
