@@ -111,7 +111,7 @@ body {
   width: 100%;
   opacity: 0;
   min-height: calc(100vh - 167px);
-  transition: 700ms;
+  transition: 2500ms;
   object-fit: cover;
 }
 
@@ -490,7 +490,7 @@ body {
   color: #000000;
 }
 
-/* FOOTER   */
+/* FOOTER */
 
 .footer {
   display: flex;
@@ -501,6 +501,7 @@ body {
   color: white;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 100px;
   position: relative;
 }
 

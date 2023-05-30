@@ -1,0 +1,107 @@
+----link do whatsapp---
+<section class="sign-up">
+  <div class="container">
+    <h1>entre em contato conosco!</h1>
+    <a
+      href="https://api.whatsapp.com/send?phone=12036327253"
+      target="_blank"
+      class="btn"
+      >CLIQUE AQUI</a
+    >
+  </div>
+</section>
+
+----participantes----
+
+<section class="participants-page" id="participants">
+  <div class="container">
+    <h1 class="title">Participantes</h1>
+
+    <div class="swiper-button-prev"></div>
+    <div class="participants swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="participant swiper-slide">
+          <img src="./src/imagens/part3.png" alt="participant" />
+
+          <div class="info">
+            <h1 class="name">carlos santos</h1>
+            <p class="office">Cantor</p>
+          </div>
+        </div>
+
+        <div class="participant swiper-slide">
+          <img src="./src/imagens/part2.png" alt="participant" />
+
+          <div class="info">
+            <h1 class="name">joana silva</h1>
+            <p class="office">Coordenadora</p>
+          </div>
+        </div>
+
+        <div class="participant swiper-slide">
+          <img src="./src/imagens/part.png" alt="participant" />
+
+          <div class="info">
+            <h1 class="name">Roberto</h1>
+            <p class="office">Palestrante</p>
+          </div>
+        </div>
+        <div class="participant swiper-slide">
+          <img src="./src/imagens/part.png" alt="participant" />
+
+          <div class="info">
+            <h1 class="name">Roberto</h1>
+            <p class="office">cantor</p>
+          </div>
+        </div>
+
+        <div class="participant swiper-slide">
+          <img src="./src/imagens/part.png" alt="participant" />
+
+          <div class="info">
+            <h1 class="name">Roberto</h1>
+            <p class="office">cantor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+---script dos pariticipantes----
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    freeMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+      620: {
+        slidesPerView: 2,
+      },
+      800: {
+        slidesPerView: 3,
+      },
+      1100: {
+        slidesPerView: 4,
+      },
+    },
+  });
+</script>
+
+----letreiro js----
+
+// const letreiroWrapper = document.querySelector('.letreiro-wrapper');
+// const letreiroTexto = document.querySelectorAll('.letreiro-texto');
+
+// letreiroWrapper.addEventListener('animationiteration', function() {
+//   letreiroTexto.forEach(texto => texto.classList.toggle('invertido'));
+// });
